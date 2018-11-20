@@ -11,8 +11,7 @@ public class PrimeNumbers {
 				int num = sc.nextInt();
 				int counter=0;
 				if(num>0) {
-					num--;
-					for(int i=num;i>0;i--) {
+					for(int i=num-1;i>1;i--) {
 						if(num%i==0) {
 							System.out.println("it's not prime");
 							break;
@@ -20,7 +19,7 @@ public class PrimeNumbers {
 							counter++;
 						}
 					}
-					if(counter==num-1) {
+					if(counter==num-2) {
 						System.out.println("it is prime");
 					}
 					System.out.println("Do you want to try with another number? (y/n)");
